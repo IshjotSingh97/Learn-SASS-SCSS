@@ -1,0 +1,38 @@
+@import "reset";
+
+$bodycolor : lightblue;
+$divcolor : red;
+
+body{ 
+    background-color: $bodycolor;
+    div{
+        background-color: $divcolor;
+    }
+    ul{
+        margin: 10px;
+    }
+}
+
+.button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.button-report{
+    @extend .button-basic;
+    border : 1px solid;
+}
+
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+  }
+
+.danger-text{
+    @include important-text
+}

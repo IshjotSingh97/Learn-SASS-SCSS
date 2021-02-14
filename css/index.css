@@ -1,0 +1,29 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: lightblue; }
+  body div {
+    background-color: red; }
+  body ul {
+    margin: 10px; }
+
+.button-basic, .button-report {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer; }
+
+.button-report {
+  border: 1px solid; }
+
+.danger-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue; }
